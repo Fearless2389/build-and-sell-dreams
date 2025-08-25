@@ -25,7 +25,7 @@ const Navigation = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <div className="font-playfair text-2xl font-bold text-primary">
-              Premier <span className="text-luxury-gold">Properties</span>
+              Serenity <span className="text-luxury-gold">Homes</span>
             </div>
           </Link>
 

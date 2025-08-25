@@ -23,11 +23,11 @@ const Home = () => {
         <div className="absolute inset-0 luxury-gradient opacity-80"></div>
         <div className="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="hero-text mb-6">
-            Building Dreams, <span className="text-luxury-gold">Creating Value</span>
+            Building Dreams, <span className="text-luxury-gold">Creating Serenity</span>
           </h1>
           <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto leading-relaxed">
-            Premier Properties is your trusted partner in residential and commercial real estate development. 
-            We construct exceptional buildings and deliver unmatched value to our clients.
+            Serenity Homes is your trusted partner in residential and commercial real estate development. 
+            We construct exceptional buildings and deliver peaceful, luxurious living spaces.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="hero" size="lg" asChild>
@@ -68,10 +68,10 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="section-title">Why Choose Premier Properties?</h2>
+              <h2 className="section-title">Why Choose Serenity Homes?</h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
                 With over 25 years of experience in construction and real estate, we have established 
-                ourselves as a leader in delivering quality projects on time and within budget.
+                ourselves as a leader in creating serene, luxury living spaces that exceed expectations.
               </p>
               <div className="space-y-4 mb-8">
                 <div className="flex items-start space-x-3">

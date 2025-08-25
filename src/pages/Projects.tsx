@@ -1,84 +1,39 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Building2, MapPin, Calendar, Users, Square } from 'lucide-react';
+import serenityNestImage from '@/assets/serenity-nest.jpg';
+import jayabheriCenterImage from '@/assets/jayabheri-center.jpg';
 
 const Projects = () => {
   const [filter, setFilter] = useState('all');
 
   const projects = [
     {
-      id: 1,
-      title: 'Luxury Residences Tower',
+      id: 'serenity-nest',
+      title: 'Serenity Nest',
       type: 'residential',
-      location: 'Downtown District',
-      description: 'A 20-story luxury residential tower featuring premium amenities and stunning city views.',
-      units: 150,
-      area: '2.5M sq ft',
+      location: 'Hyderabad, Telangana',
+      description: 'A premium 6-story residential complex featuring modern architecture with white and brown facades, spacious balconies, and beautiful landscaping.',
+      units: 24,
+      area: '850,000 sq ft',
       completed: '2023',
       status: 'completed',
-      image: 'luxury-tower'
+      image: 'serenity-nest'
     },
     {
-      id: 2,
-      title: 'Business Park Complex',
+      id: 'jayabheri-center',
+      title: 'Jayabheri Center',
       type: 'commercial',
-      location: 'Tech Hub Area',
-      description: 'Modern commercial complex with state-of-the-art office spaces and retail outlets.',
-      units: 50,
-      area: '1.8M sq ft',
-      completed: '2023',
-      status: 'completed',
-      image: 'business-park'
-    },
-    {
-      id: 3,
-      title: 'Greenview Apartments',
-      type: 'residential',
-      location: 'Suburban Heights',
-      description: 'Eco-friendly apartment complex with sustainable design and green spaces.',
-      units: 200,
-      area: '3.2M sq ft',
-      completed: '2024',
-      status: 'ongoing',
-      image: 'greenview-apts'
-    },
-    {
-      id: 4,
-      title: 'City Center Mall',
-      type: 'commercial',
-      location: 'Central Business District',
-      description: 'Premium shopping and entertainment complex in the heart of the city.',
-      units: 80,
-      area: '1.5M sq ft',
-      completed: '2024',
-      status: 'ongoing',
-      image: 'city-mall'
-    },
-    {
-      id: 5,
-      title: 'Skyline Condominiums',
-      type: 'residential',
-      location: 'Waterfront Area',
-      description: 'Luxury condominiums with panoramic waterfront and city skyline views.',
-      units: 120,
-      area: '2.1M sq ft',
-      completed: '2022',
-      status: 'completed',
-      image: 'skyline-condos'
-    },
-    {
-      id: 6,
-      title: 'Innovation Hub',
-      type: 'commercial',
-      location: 'Technology District',
-      description: 'Cutting-edge office complex designed for tech companies and startups.',
+      location: 'Financial District, Hyderabad',
+      description: 'A sophisticated commercial and mixed-use complex featuring contemporary glass facade architecture, premium office spaces, and retail outlets.',
       units: 40,
-      area: '1.2M sq ft',
-      completed: '2025',
-      status: 'upcoming',
-      image: 'innovation-hub'
+      area: '1,200,000 sq ft',
+      completed: '2024',
+      status: 'completed',
+      image: 'jayabheri-center'
     }
   ];
 
@@ -146,12 +101,18 @@ const Projects = () => {
             {filteredProjects.map((project) => (
               <Card key={project.id} className="project-card group">
                 <CardContent className="p-0">
-                  {/* Project Image Placeholder */}
-                  <div className="h-64 bg-gradient-to-br from-luxury-navy to-primary flex items-center justify-center relative overflow-hidden">
-                    <Building2 className="h-16 w-16 text-luxury-gold opacity-50" />
+                  {/* Project Image */}
+                  <div className="h-64 relative overflow-hidden">
+                    <img 
+                      src={project.id === 'serenity-nest' ? serenityNestImage : jayabheriCenterImage}
+                      alt={project.title}
+                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    />
                     <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                      <Button variant="hero" size="sm">
-                        View Details
+                      <Button variant="hero" size="sm" asChild>
+                        <Link to={`/projects/${project.id}`}>
+                          View Details
+                        </Link>
                       </Button>
                     </div>
                   </div>
@@ -214,15 +175,15 @@ const Projects = () => {
           </div>
           <div className="grid md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="font-playfair text-4xl font-bold text-luxury-gold mb-2">150+</div>
-              <div className="text-muted-foreground">Projects Completed</div>
+              <div className="font-playfair text-4xl font-bold text-luxury-gold mb-2">25+</div>
+              <div className="text-muted-foreground">Years Experience</div>
             </div>
             <div className="text-center">
-              <div className="font-playfair text-4xl font-bold text-luxury-gold mb-2">12M+</div>
+              <div className="font-playfair text-4xl font-bold text-luxury-gold mb-2">2M+</div>
               <div className="text-muted-foreground">Sq Ft Developed</div>
             </div>
             <div className="text-center">
-              <div className="font-playfair text-4xl font-bold text-luxury-gold mb-2">500+</div>
+              <div className="font-playfair text-4xl font-bold text-luxury-gold mb-2">100+</div>
               <div className="text-muted-foreground">Families Housed</div>
             </div>
             <div className="text-center">
