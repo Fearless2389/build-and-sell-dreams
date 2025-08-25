@@ -17,8 +17,15 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Navy Blue Primary Theme */
+    --primary: 221 83% 53%;
+    --primary-foreground: 0 0% 100%;
+    --primary-dark: 221 83% 35%;
+    
+    /* Gold Accent Colors */
+    --accent-gold: 45 85% 58%;
+    --accent-gold-dark: 45 85% 45%;
+    --accent-gold-light: 45 85% 85%;
 
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
@@ -34,25 +41,37 @@ All colors MUST be HSL.
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 221 83% 53%;
+
+    /* Custom Real Estate Theme Colors */
+    --luxury-navy: 221 83% 35%;
+    --luxury-gold: 45 85% 58%;
+    --elegant-gray: 210 11% 96%;
+    --soft-shadow: 221 83% 35%;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--luxury-navy)), hsl(var(--primary)));
+    --gradient-gold: linear-gradient(135deg, hsl(var(--luxury-gold)), hsl(var(--accent-gold-dark)));
+    --gradient-elegant: linear-gradient(180deg, hsl(var(--background)), hsl(var(--elegant-gray)));
+    
+    /* Shadows */
+    --shadow-luxury: 0 20px 40px -12px hsl(var(--luxury-navy) / 0.15);
+    --shadow-card: 0 4px 20px -2px hsl(var(--luxury-navy) / 0.08);
+    --shadow-gold: 0 8px 25px -8px hsl(var(--luxury-gold) / 0.3);
 
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .dark {
@@ -100,6 +119,44 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-inter;
+  }
+}
+
+@layer components {
+  .luxury-gradient {
+    background: var(--gradient-hero);
+  }
+  
+  .gold-gradient {
+    background: var(--gradient-gold);
+  }
+  
+  .elegant-gradient {
+    background: var(--gradient-elegant);
+  }
+  
+  .luxury-shadow {
+    box-shadow: var(--shadow-luxury);
+  }
+  
+  .card-shadow {
+    box-shadow: var(--shadow-card);
+  }
+  
+  .gold-shadow {
+    box-shadow: var(--shadow-gold);
+  }
+  
+  .hero-text {
+    @apply font-playfair text-4xl md:text-6xl font-bold text-primary-foreground leading-tight;
+  }
+  
+  .section-title {
+    @apply font-playfair text-3xl md:text-4xl font-semibold text-primary mb-6;
+  }
+  
+  .project-card {
+    @apply bg-card rounded-lg overflow-hidden card-shadow hover:luxury-shadow transition-all duration-300 transform hover:scale-105;
   }
 }
