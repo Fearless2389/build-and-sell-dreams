@@ -38,7 +38,7 @@ const Footer = () => {
             <div className="flex items-center space-x-2 mb-6">
               <Building2 className="h-8 w-8 text-luxury-gold" />
               <div className="font-playfair text-2xl font-bold">
-                Premier <span className="text-luxury-gold">Properties</span>
+                Serenity <span className="text-luxury-gold">Homes</span>
               </div>
             </div>
             <p className="text-primary-foreground/80 mb-6 leading-relaxed">
@@ -117,10 +117,10 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-luxury-gold flex-shrink-0" />
                 <a
-                  href="mailto:info@premierproperties.com"
+                  href="mailto:info@serenityhomes.com"
                   className="text-primary-foreground/80 text-sm hover:text-luxury-gold transition-colors"
                 >
-                  info@premierproperties.com
+                  info@serenityhomes.com
                 </a>
               </div>
             </div>
@@ -133,7 +133,7 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-primary-foreground/60 text-sm mb-4 md:mb-0">
-              © {new Date().getFullYear()} Premier Properties. All rights reserved.
+              © {new Date().getFullYear()} Serenity Homes. All rights reserved.
             </div>
             <div className="flex space-x-6 text-sm">
               <a href="#" className="text-primary-foreground/60 hover:text-luxury-gold transition-colors">

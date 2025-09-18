@@ -53,7 +53,7 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="font-playfair text-4xl md:text-5xl font-bold text-primary-foreground mb-6">
-              About Premier Properties
+              About Serenity Homes
             </h1>
             <p className="text-xl text-primary-foreground/90 max-w-3xl mx-auto leading-relaxed">
               For over 25 years, we have been at the forefront of real estate development, 
@@ -70,7 +70,7 @@ const About = () => {
             <div>
               <h2 className="section-title">Our Story</h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Premier Properties was founded in 1998 with a simple yet ambitious goal: to redefine 
+                Serenity Homes was founded in 1998 with a simple yet ambitious goal: to redefine 
                 excellence in real estate development. What started as a small construction firm has 
                 grown into a trusted name in both residential and commercial development.
               </p>
@@ -135,42 +135,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* Timeline */}
-      <section className="py-20 bg-background">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="section-title">Our Journey</h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Key milestones that have shaped our company and defined our success.
-            </p>
-          </div>
-          <div className="relative">
-            <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 h-full w-0.5 bg-luxury-gold"></div>
-            <div className="space-y-12">
-              {milestones.map((milestone, index) => (
-                <div key={index} className={`relative flex items-center ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} flex-col md:text-left text-center`}>
-                  <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-luxury-gold rounded-full border-4 border-background"></div>
-                  <div className={`ml-12 md:ml-0 md:w-1/2 ${index % 2 === 0 ? 'md:pr-12' : 'md:pl-12'}`}>
-                    <Card className="card-shadow">
-                      <CardContent className="p-6">
-                        <div className="font-playfair text-2xl font-bold text-luxury-gold mb-2">
-                          {milestone.year}
-                        </div>
-                        <h3 className="font-playfair text-xl font-semibold text-primary mb-2">
-                          {milestone.title}
-                        </h3>
-                        <p className="text-muted-foreground">
-                          {milestone.description}
-                        </p>
-                      </CardContent>
-                    </Card>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Call to Action */}
       <section className="py-20 luxury-gradient">

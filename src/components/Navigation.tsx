@@ -44,9 +44,6 @@ const Navigation = () => {
                 {item.name}
               </Link>
             ))}
-            <Button variant="hero" size="sm" asChild>
-              <Link to="/contact">Get Quote</Link>
-            </Button>
           </div>
 
           {/* Mobile menu button */}
@@ -81,13 +78,6 @@ const Navigation = () => {
                 {item.name}
               </Link>
             ))}
-            <div className="px-3 py-2">
-              <Button variant="hero" size="sm" className="w-full" asChild>
-                <Link to="/contact" onClick={() => setIsOpen(false)}>
-                  Get Quote
-                </Link>
-              </Button>
-            </div>
           </div>
         </div>
       )}

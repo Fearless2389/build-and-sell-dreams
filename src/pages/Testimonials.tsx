@@ -16,7 +16,7 @@ const Testimonials = () => {
       project: 'Luxury Residences Tower',
       type: 'residential',
       rating: 5,
-      content: 'Premier Properties exceeded our expectations in every way. The quality of construction, attention to detail, and professional management throughout the project was outstanding. Our investment has already shown exceptional returns.',
+      content: 'Serenity Homes exceeded our expectations in every way. The quality of construction, attention to detail, and professional management throughout the project was outstanding. Our investment has already shown exceptional returns.',
       image: 'sarah-j'
     },
     {
@@ -26,7 +26,7 @@ const Testimonials = () => {
       project: 'Business Park Complex',
       type: 'commercial',
       rating: 5,
-      content: 'Working with Premier Properties was a game-changer for our business. They delivered a world-class office space that perfectly matches our needs. The project was completed on time and within budget.',
+      content: 'Working with Serenity Homes was a game-changer for our business. They delivered a world-class office space that perfectly matches our needs. The project was completed on time and within budget.',
       image: 'michael-c'
     },
     {
@@ -36,7 +36,7 @@ const Testimonials = () => {
       project: 'Greenview Apartments',
       type: 'residential',
       rating: 5,
-      content: 'Our new home is everything we dreamed of and more. The team at Premier Properties listened to our needs and created a space that truly feels like home. The quality is exceptional and the service was professional.',
+      content: 'Our new home is everything we dreamed of and more. The team at Serenity Homes listened to our needs and created a space that truly feels like home. The quality is exceptional and the service was professional.',
       image: 'emily-r'
     },
     {
@@ -46,7 +46,7 @@ const Testimonials = () => {
       project: 'City Center Mall',
       type: 'commercial',
       rating: 5,
-      content: 'As a fellow developer, I can appreciate the level of expertise and professionalism that Premier Properties brings to every project. Their commitment to quality and timely delivery is unmatched in the industry.',
+      content: 'As a fellow developer, I can appreciate the level of expertise and professionalism that Serenity Homes brings to every project. Their commitment to quality and timely delivery is unmatched in the industry.',
       image: 'david-t'
     },
     {
@@ -56,7 +56,7 @@ const Testimonials = () => {
       project: 'Skyline Condominiums',
       type: 'residential',
       rating: 5,
-      content: 'Premier Properties made our first home buying experience smooth and stress-free. They guided us through every step and delivered a beautiful condominium with stunning views. We couldn\'t be happier!',
+      content: 'Serenity Homes made our first home buying experience smooth and stress-free. They guided us through every step and delivered a beautiful condominium with stunning views. We couldn\'t be happier!',
       image: 'lisa-w'
     },
     {
@@ -66,7 +66,7 @@ const Testimonials = () => {
       project: 'Innovation Hub',
       type: 'commercial',
       rating: 5,
-      content: 'The Innovation Hub is the perfect space for our growing tech company. Premier Properties understood our unique needs and created a modern, flexible workspace that inspires innovation and collaboration.',
+      content: 'The Innovation Hub is the perfect space for our growing tech company. Serenity Homes understood our unique needs and created a modern, flexible workspace that inspires innovation and collaboration.',
       image: 'robert-k'
     }
   ];
@@ -112,7 +112,7 @@ const Testimonials = () => {
               Client Testimonials
             </h1>
             <p className="text-xl text-primary-foreground/90 max-w-3xl mx-auto leading-relaxed">
-              Hear from our satisfied clients about their experience working with Premier Properties 
+              Hear from our satisfied clients about their experience working with Serenity Homes 
               and the exceptional results we've delivered together.
             </p>
           </div>
@@ -294,7 +294,7 @@ const Testimonials = () => {
             Ready to Join Our Satisfied Clients?
           </h2>
           <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
-            Experience the Premier Properties difference for yourself. Let's create something exceptional together.
+            Experience the Serenity Homes difference for yourself. Let's create something exceptional together.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="hero" size="lg" asChild>
