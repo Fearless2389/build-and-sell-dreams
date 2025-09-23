@@ -139,26 +139,26 @@ const Services = () => {
               End-to-end real estate services designed to meet all your construction and property needs.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {services.map((service, index) => (
-              <Card key={index} className="project-card group">
-                <CardContent className="p-6">
+              <Card key={index} className="project-card group h-full">
+                <CardContent className="p-8 h-full flex flex-col">
                   <div className="flex justify-center mb-6">
                     <div className="p-4 bg-luxury-gold/10 rounded-full group-hover:bg-luxury-gold/20 transition-colors duration-300">
-                      <service.icon className="h-10 w-10 text-luxury-gold" />
+                      <service.icon className="h-12 w-12 text-luxury-gold" />
                     </div>
                   </div>
                   <h3 className="font-playfair text-xl font-semibold text-primary mb-4 text-center">
                     {service.title}
                   </h3>
-                  <p className="text-muted-foreground mb-6 leading-relaxed text-center">
+                  <p className="text-muted-foreground mb-6 leading-relaxed text-center flex-grow">
                     {service.description}
                   </p>
-                  <ul className="space-y-2">
+                  <ul className="space-y-3 mt-auto">
                     {service.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-center text-sm text-muted-foreground">
-                        <CheckCircle className="h-4 w-4 text-luxury-gold mr-3 flex-shrink-0" />
-                        {feature}
+                      <li key={featureIndex} className="flex items-start text-sm text-muted-foreground">
+                        <CheckCircle className="h-4 w-4 text-luxury-gold mr-3 flex-shrink-0 mt-0.5" />
+                        <span>{feature}</span>
                       </li>
                     ))}
                   </ul>

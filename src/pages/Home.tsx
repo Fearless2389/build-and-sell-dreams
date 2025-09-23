@@ -2,13 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Building2, Users, Award, TrendingUp } from 'lucide-react';
+import { Building2, Award, TrendingUp } from 'lucide-react';
 import heroImage from '@/assets/hero-skyline.jpg';
 
 const Home = () => {
   const stats = [
     { icon: Building2, label: 'Projects Completed', value: '15+' },
-    { icon: Users, label: 'Happy Clients', value: '20' },
     { icon: Award, label: 'Years Experience', value: '15+' },
     { icon: TrendingUp, label: 'Properties Sold', value: '200+' },
   ];
@@ -43,7 +42,7 @@ const Home = () => {
       {/* Stats Section */}
       <section className="py-16 bg-elegant-gray">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
                 <div className="flex justify-center mb-4">
