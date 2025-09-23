@@ -101,17 +101,17 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-luxury-gold mt-0.5 flex-shrink-0" />
                 <div className="text-primary-foreground/80 text-sm">
-                  <div>123 Business District, Suite 500</div>
-                  <div>City Center, State 12345</div>
+                  <div>Flat G-11,Serenity Homes Apartment</div>
+                  <div>Kompally,Hyderabad,500100</div>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-luxury-gold flex-shrink-0" />
                 <a
-                  href="tel:+15551234567"
+                  href="tel:+91 9989007575"
                   className="text-primary-foreground/80 text-sm hover:text-luxury-gold transition-colors"
                 >
-                  +1 (555) 123-4567
+                  +91 9989007575
                 </a>
               </div>
               <div className="flex items-center space-x-3">
