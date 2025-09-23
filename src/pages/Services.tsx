@@ -180,13 +180,13 @@ const Services = () => {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {process.map((step, index) => (
-              <div key={index} className="relative">
+              <div key={index} className="relative pt-6">
                 <Card className="project-card h-full">
-                  <CardContent className="p-6 text-center">
-                    <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-8 h-8 bg-luxury-gold rounded-full flex items-center justify-center text-white font-bold text-sm">
+                  <CardContent className="p-6 text-center relative">
+                    <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 w-12 h-12 bg-luxury-gold rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg z-10">
                       {index + 1}
                     </div>
-                    <div className="flex justify-center mb-6 mt-4">
+                    <div className="flex justify-center mb-6 mt-8">
                       <div className="p-4 bg-luxury-gold/10 rounded-full">
                         <step.icon className="h-8 w-8 text-luxury-gold" />
                       </div>
