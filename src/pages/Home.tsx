@@ -7,9 +7,9 @@ import heroImage from '@/assets/hero-skyline.jpg';
 
 const Home = () => {
   const stats = [
-    { icon: Building2, label: 'Projects Completed', value: '150+' },
-    { icon: Users, label: 'Happy Clients', value: '500+' },
-    { icon: Award, label: 'Years Experience', value: '25+' },
+    { icon: Building2, label: 'Projects Completed', value: '15+' },
+    { icon: Users, label: 'Happy Clients', value: '20' },
+    { icon: Award, label: 'Years Experience', value: '15+' },
     { icon: TrendingUp, label: 'Properties Sold', value: '200+' },
   ];
 
@@ -70,7 +70,7 @@ const Home = () => {
             <div>
               <h2 className="section-title">Why Choose Serenity Homes?</h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                With over 25 years of experience in construction and real estate, we have established 
+                With over 15 years of experience in construction and real estate, we have established 
                 ourselves as a leader in creating serene, luxury living spaces that exceed expectations.
               </p>
               <div className="space-y-4 mb-8">

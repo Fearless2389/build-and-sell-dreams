@@ -37,7 +37,7 @@ const ProjectDetail = () => {
         '4BHK': '₹90-1.2 Crores'
       },
       contact: {
-        phone: '+91 9876543210',
+        phone: '+91 9989007575',
         email: 'info@serenityhomes.com'
       }
     },
@@ -66,7 +66,7 @@ const ProjectDetail = () => {
         'Retail Space': '₹100-150 per sq ft'
       },
       contact: {
-        phone: '+91 9876543210',
+        phone: '+91 9989007575',
         email: 'commercial@serenityhomes.com'
       }
     }

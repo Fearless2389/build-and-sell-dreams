@@ -56,7 +56,7 @@ const About = () => {
               About Serenity Homes
             </h1>
             <p className="text-xl text-primary-foreground/90 max-w-3xl mx-auto leading-relaxed">
-              For over 25 years, we have been at the forefront of real estate development, 
+              For over 15 years, we have been at the forefront of real estate development, 
               creating exceptional spaces that enhance lives and communities.
             </p>
           </div>

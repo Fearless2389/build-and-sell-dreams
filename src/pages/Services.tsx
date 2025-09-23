@@ -55,42 +55,6 @@ const Services = () => {
         'Investment properties'
       ]
     },
-    {
-      icon: Users,
-      title: 'Property Consultation',
-      description: 'Expert guidance throughout your real estate journey from initial planning to final sale.',
-      features: [
-        'Market analysis',
-        'Investment advice',
-        'Property valuation',
-        'Legal documentation',
-        'Financial planning'
-      ]
-    },
-    {
-      icon: Calculator,
-      title: 'Investment Services',
-      description: 'Maximize your real estate investment potential with our comprehensive investment solutions.',
-      features: [
-        'Portfolio management',
-        'ROI optimization',
-        'Market research',
-        'Risk assessment',
-        'Investment strategies'
-      ]
-    },
-    {
-      icon: Clipboard,
-      title: 'Project Management',
-      description: 'End-to-end project management ensuring timely delivery within budget and quality standards.',
-      features: [
-        'Timeline management',
-        'Budget control',
-        'Quality assurance',
-        'Vendor coordination',
-        'Progress reporting'
-      ]
-    }
   ];
 
   const process = [

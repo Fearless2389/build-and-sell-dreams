@@ -378,7 +378,7 @@ const Contact = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="hero" size="lg">
               <Phone className="h-4 w-4 mr-2" />
-              Call Now: (555) 123-4567
+              Call Now: +91 9989007575
             </Button>
             <Button variant="elegant" size="lg">
               <MessageSquare className="h-4 w-4 mr-2" />
