@@ -60,13 +60,13 @@ const Contact = () => {
     {
       icon: Phone,
       title: 'Phone',
-      details: '+1 (555) 123-4567',
+      details: '+91 9989007575',
       description: 'Call us for immediate assistance'
     },
     {
       icon: MessageSquare,
       title: 'WhatsApp',
-      details: '+1 (555) 123-4567',
+      details: '+91 9989007575',
       description: 'Quick messages and updates'
     },
     {
@@ -78,8 +78,8 @@ const Contact = () => {
     {
       icon: MapPin,
       title: 'Office Location',
-      details: '123 Business District, Suite 500',
-      description: 'City Center, State 12345'
+      details: 'Flat G-11,Serenity Homes Apartment',
+      description: 'Kompally,Hyderabad,500100'
     },
     {
       icon: Clock,
@@ -289,32 +289,6 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Map Section */}
-      <section className="py-20 bg-elegant-gray">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="section-title">Visit Our Office</h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Located in the heart of the business district, our office is easily accessible and equipped with all modern amenities.
-            </p>
-          </div>
-          
-          {/* Map Placeholder */}
-          <Card className="luxury-shadow">
-            <CardContent className="p-0">
-              <div className="h-96 bg-gradient-to-br from-luxury-navy to-primary rounded-lg flex items-center justify-center relative overflow-hidden">
-                <div className="text-center text-primary-foreground">
-                  <MapPin className="h-16 w-16 mx-auto mb-4 text-luxury-gold" />
-                  <h3 className="font-playfair text-2xl font-semibold mb-2">Our Location</h3>
-                  <p className="text-primary-foreground/80 mb-4">123 Business District, Suite 500</p>
-                  <p className="text-primary-foreground/80">City Center, State 12345</p>
-                </div>
-                <div className="absolute inset-0 bg-black/20"></div>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
 
       {/* Why Contact Us */}
       <section className="py-20 bg-background">
