@@ -15,8 +15,8 @@ const Projects = () => {
       id: 'serenity-nest',
       title: 'Serenity Nest',
       type: 'residential',
-      location: 'Hyderabad, Telangana',
-      description: 'A premium 6-story residential complex featuring modern architecture with white and brown facades, spacious balconies, and beautiful landscaping.',
+      location: 'Kompally, Hyderabad, Telangana',
+      description: 'A premium 5-story residential complex featuring modern architecture with white and brown facades, spacious balconies, and beautiful landscaping.',
       units: 24,
       area: '850,000 sq ft',
       completed: '2023',
@@ -24,16 +24,16 @@ const Projects = () => {
       image: 'serenity-nest'
     },
     {
-      id: 'jayabheri-center',
-      title: 'Jayabheri Center',
-      type: 'commercial',
-      location: 'Financial District, Hyderabad',
+      id: 'Serenity Homes',
+      title: 'Serenity Homes',
+      type: 'residential',
+      location: 'Kompally, Hyderabad, Telangana',
       description: 'A sophisticated commercial and mixed-use complex featuring contemporary glass facade architecture, premium office spaces, and retail outlets.',
       units: 40,
       area: '1,200,000 sq ft',
       completed: '2024',
       status: 'completed',
-      image: 'jayabheri-center'
+      image: 'Serenity Homes'
     }
   ];
 
@@ -104,7 +104,7 @@ const Projects = () => {
                   {/* Project Image */}
                   <div className="h-64 relative overflow-hidden">
                     <img 
-                      src={project.id === 'serenity-nest' ? serenityNestImage : jayabheriCenterImage}
+                      src={project.id === 'Serenity Nest' ? SerenityNestImage : SerenityHomesImage}
                       alt={project.title}
                       className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                     />
