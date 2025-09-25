@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Building2, MapPin, Calendar, Users, Square } from 'lucide-react';
 import serenityNestImage from '@/assets/Serenity Nest.jpg';
-import SerenityHomesImage from '@/assets/Serenity Homes.jpg';
+import jayabheriCenterImage from '@/assets/Serenity Homes.jpg';
 
 const Projects = () => {
   const [filter, setFilter] = useState('all');
@@ -21,7 +21,7 @@ const Projects = () => {
       area: '850,000 sq ft',
       completed: '2023',
       status: 'completed',
-      image: 'Serenity Nest'
+      image: 'serenity-nest'
     },
     {
       id: 'Serenity Homes',
