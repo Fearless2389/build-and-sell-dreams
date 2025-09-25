@@ -10,32 +10,37 @@ import jayabheriCenterImage from '@/assets/Serenity Homes.jpg';
 const Projects = () => {
   const [filter, setFilter] = useState('all');
 
-  const projects = [
-    {
-      id: 'serenity-nest',
-      title: 'Serenity Nest',
-      type: 'residential',
-      location: 'Kompally, Hyderabad, Telangana',
-      description: 'A premium 5-story residential complex featuring modern architecture with white and brown facades, spacious balconies, and beautiful landscaping.',
-      units: 24,
-      area: '850,000 sq ft',
-      completed: '2023',
-      status: 'completed',
-      image: 'serenity-nest'
-    },
-    {
-      id: 'Serenity Homes',
-      title: 'Serenity Homes',
-      type: 'residential',
-      location: 'Kompally, Hyderabad, Telangana',
-      description: 'A sophisticated commercial and mixed-use complex featuring contemporary glass facade architecture, premium office spaces, and retail outlets.',
-      units: 40,
-      area: '1,200,000 sq ft',
-      completed: '2024',
-      status: 'completed',
-      image: 'Serenity Homes'
-    }
-  ];
+ const projects = [
+  {
+    id: 'serenity-nest',
+    title: 'Serenity Nest',
+    type: 'residential',
+    location: 'Kompally, Hyderabad, Telangana',
+    description: 'A premium 6-story residential complex featuring modern architecture with white and brown facades, spacious balconies, and beautiful landscaping.',
+    units: 24,
+    area: '850,000 sq ft',
+    completed: '2023',
+    status: 'completed',
+    image: Serenity Nest.jpg,
+    floorPlan: require('@/assets/Serenity Nest.pdf'),
+    locationMap: "https://www.google.com/maps/embed?pb=!1m18!..."
+  },
+  {
+    id: 'serenity-homes',
+    title: 'Serenity Homes',
+    type: 'residential',
+    location: 'Kompally, Hyderabad, Telangana',
+    description: 'A sophisticated residential and mixed-use complex featuring contemporary glass facade architecture, premium living spaces, and modern amenities.',
+    units: 40,
+    area: '1,200,000 sq ft',
+    completed: '2024',
+    status: 'completed',
+    image: Serenity Homes.jpg,
+    floorPlan: require('@/assets/Serenity Homes floor plan.pdf'),
+    locationMap: "https://www.google.com/maps/embed?pb=!1m18!..."
+  }
+];
+
 
   const filteredProjects = filter === 'all' 
     ? projects 
