@@ -24,7 +24,7 @@ const Projects = () => {
       image: 'Serenity Nest'
     },
     {
-      id: 'Serenity Homes',
+      id: 'serenity-homes',
       title: 'Serenity Homes',
       type: 'residential',
       location: 'Kompally, Hyderabad, Telangana',
