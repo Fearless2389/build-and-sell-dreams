@@ -212,18 +212,4 @@ const Projects = () => {
   );
 };
 
-{/* Project Images & Location */}
-<section className="py-12 bg-background">
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div className="grid md:grid-cols-2 gap-8 mb-12">
-      {/* Main Image */}
-      <div className="aspect-video overflow-hidden rounded-lg">
-        <img 
-          src={project.image} 
-          alt={project.title}
-          className="w-full h-full object-cover hover-scale transition-transform duration-300"
-        />
-      </div>
-
-    
 export default Projects;
