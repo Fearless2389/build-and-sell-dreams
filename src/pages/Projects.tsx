@@ -4,8 +4,8 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Building2, MapPin, Calendar, Users, Square } from 'lucide-react';
-import serenityNestImage from '@/assets/Serenity Nest.jpg';
-import jayabheriCenterImage from '@/assets/Serenity Homes.jpg';
+import SerenityNest from '@/assets/Serenity Nest.jpg';
+import SerenityHomes from '@/assets/Serenity Homes.jpg';
 
 const Projects = () => {
   const [filter, setFilter] = useState('all');
