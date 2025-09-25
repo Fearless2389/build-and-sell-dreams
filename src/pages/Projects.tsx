@@ -21,7 +21,7 @@ const Projects = () => {
       area: '850,000 sq ft',
       completed: '2023',
       status: 'completed',
-      image: 'serenity-nest'
+      image: 'Serenity Nest'
     },
     {
       id: 'Serenity Homes',
