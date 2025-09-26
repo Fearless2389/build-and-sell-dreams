@@ -37,24 +37,61 @@ const Contact = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Here you would typically send the form data to your backend
-    console.log('Form submitted:', formData);
-    toast({
-      title: "Message Sent Successfully!",
-      description: "We'll get back to you within 24 hours.",
-    });
-    // Reset form
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      projectType: '',
-      budget: '',
-      message: ''
-    });
+ const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+
+  const formPayload = {
+    access_key: "c722b9ac-b03f-434f-b7d4-603b0284ba61", 
+    subject: "New Contact Form Submission - Serenity Homes",
+    from_name: formData.name,
+    from_email: formData.email,
+    phone: formData.phone,
+    projectType: formData.projectType,
+    budget: formData.budget,
+    message: formData.message,
   };
+
+  try {
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formPayload),
+    });
+
+    const result = await response.json();
+
+    if (result.success) {
+      toast({
+        title: "Message Sent Successfully!",
+        description: "We'll get back to you within 24 hours.",
+      });
+
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        projectType: '',
+        budget: '',
+        message: ''
+      });
+    } else {
+      toast({
+        title: "Submission Failed",
+        description: "Please try again later.",
+        variant: "destructive",
+      });
+    }
+  } catch (error) {
+    toast({
+      title: "Error",
+      description: "Something went wrong. Please try again.",
+      variant: "destructive",
+    });
+  }
+};
+
 
   const contactInfo = [
     {
@@ -202,10 +239,9 @@ const Contact = () => {
                         className="w-full px-3 py-2 border border-input rounded-md bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
                       >
                         <option value="">Select budget range</option>
-                        <option value="under-500k">Under $500K</option>
-                        <option value="500k-1m">$500K - $1M</option>
-                        <option value="1m-5m">$1M - $5M</option>
-                        <option value="5m-plus">$5M+</option>
+                        <option value="under-60L">Under $60L</option>
+                        <option value="60-1Cr">$60L - $1Cr</option>
+                        <option value="1Cr-plus">$1Cr+</option>
                         <option value="consultation">Just consultation</option>
                       </select>
                     </div>
