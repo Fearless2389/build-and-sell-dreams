@@ -183,7 +183,7 @@ const Services = () => {
               <div key={index} className="relative pt-6">
                 <Card className="project-card h-full">
                   <CardContent className="p-6 text-center relative">
-                    <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 w-12 h-12 bg-luxury-gold rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg z-10">
+                    <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 w-12 h-12 bg-luxury-gold rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg z-10 hidden">
                       {index + 1}
                     </div>
                     <div className="flex justify-center mb-6 mt-8">
