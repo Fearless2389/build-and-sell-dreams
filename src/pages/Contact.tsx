@@ -239,10 +239,10 @@ const Contact = () => {
                         className="w-full px-3 py-2 border border-input rounded-md bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
                       >
                         <option value="">Select budget range</option>
-                        <option value="under-60L">Under $60L</option>
-                        <option value="60-1Cr">$60L - $1Cr</option>
-                        <option value="1Cr-plus">$1Cr+</option>
-                        <option value="consultation">Just consultation</option>
+                        <option value="Under-60L">Under 60L</option>
+                        <option value="60-1Cr">60L - 1Cr</option>
+                        <option value="1Cr-plus">1Cr+</option>
+                        <option value="consultation">Just Consultation</option>
                       </select>
                     </div>
                     
