@@ -12,7 +12,7 @@ const Projects = () => {
 
   const projects = [
     {
-      id: 'serenity-nest',
+      id: 'Serenity Nest',
       title: 'Serenity Nest',
       type: 'residential',
       location: 'Kompally, Hyderabad, Telangana',
