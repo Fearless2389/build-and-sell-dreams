@@ -70,7 +70,7 @@ const About = () => {
             <div>
               <h2 className="section-title">Our Story</h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Serenity Homes was founded in 1998 with a simple yet ambitious goal: to redefine 
+                Serenity Homes has a simple yet ambitious goal: to redefine 
                 excellence in real estate development. What started as a small construction firm has 
                 grown into a trusted name in both residential and commercial development.
               </p>
@@ -91,7 +91,7 @@ const About = () => {
               <Card className="project-card">
                 <CardContent className="p-8">
                   <div className="text-center">
-                    <div className="font-playfair text-6xl font-bold text-luxury-gold mb-4">25+</div>
+                    <div className="font-playfair text-6xl font-bold text-luxury-gold mb-4">15+</div>
                     <h3 className="font-playfair text-2xl font-semibold text-primary mb-2">Years of Excellence</h3>
                     <p className="text-muted-foreground">
                       Building trust, one project at a time, with unwavering commitment to quality and innovation.
