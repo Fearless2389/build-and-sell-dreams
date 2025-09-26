@@ -11,31 +11,32 @@ const Projects = () => {
   const [filter, setFilter] = useState('all');
 
   const projects = [
-    {
-      id: 'Serenity Nest',
-      title: 'Serenity Nest',
-      type: 'residential',
-      location: 'Kompally, Hyderabad, Telangana',
-      description: 'A premium 5-story residential complex featuring modern architecture with white and brown facades, spacious balconies, and beautiful landscaping.',
-      units: 24,
-      area: '850,000 sq ft',
-      completed: '2023',
-      status: 'completed',
-      image: 'Serenity Nest'
-    },
-    {
-      id: 'serenity-homes',
-      title: 'Serenity Homes',
-      type: 'residential',
-      location: 'Kompally, Hyderabad, Telangana',
-      description: 'A sophisticated commercial and mixed-use complex featuring contemporary glass facade architecture, premium office spaces, and retail outlets.',
-      units: 40,
-      area: '1,200,000 sq ft',
-      completed: '2024',
-      status: 'completed',
-      image: 'Serenity Homes'
-    }
-  ];
+  {
+    id: 'serenity-nest', // URL safe
+    title: 'Serenity Nest',
+    type: 'residential',
+    location: 'Kompally, Hyderabad, Telangana',
+    description: 'A premium 5-story residential complex featuring modern architecture with white and brown facades, spacious balconies, and beautiful landscaping.',
+    units: 24,
+    area: '850,000 sq ft',
+    completed: '2023',
+    status: 'completed',
+    image: SerenityNestImage, // use imported image directly
+  },
+  {
+    id: 'serenity-homes', // URL safe
+    title: 'Serenity Homes',
+    type: 'residential',
+    location: 'Kompally, Hyderabad, Telangana',
+    description: 'A sophisticated commercial and mixed-use complex featuring contemporary glass facade architecture, premium office spaces, and retail outlets.',
+    units: 40,
+    area: '1,200,000 sq ft',
+    completed: '2024',
+    status: 'completed',
+    image: SerenityHomesImage,
+  }
+];
+
 
   const filteredProjects = filter === 'all' 
     ? projects 
