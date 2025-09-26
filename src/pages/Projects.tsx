@@ -105,7 +105,7 @@ const Projects = () => {
                   {/* Project Image */}
                   <div className="h-64 relative overflow-hidden">
                     <img 
-                      src={project.id === 'Serenity Nest' ? SerenityNestImage : SerenityHomesImage}
+                      src={project.image}
                       alt={project.title}
                       className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                     />
