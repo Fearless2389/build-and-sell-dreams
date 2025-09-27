@@ -56,7 +56,7 @@ const About = () => {
               About Serenity Homes
             </h1>
             <p className="text-xl text-primary-foreground/90 max-w-3xl mx-auto leading-relaxed">
-              For over 15 years, we have been at the forefront of real estate development, 
+              For over 10 years, we have been at the forefront of real estate development, 
               creating exceptional spaces that enhance lives and communities.
             </p>
           </div>
@@ -91,7 +91,7 @@ const About = () => {
               <Card className="project-card">
                 <CardContent className="p-8">
                   <div className="text-center">
-                    <div className="font-playfair text-6xl font-bold text-luxury-gold mb-4">15+</div>
+                    <div className="font-playfair text-6xl font-bold text-luxury-gold mb-4">10+</div>
                     <h3 className="font-playfair text-2xl font-semibold text-primary mb-2">Years of Excellence</h3>
                     <p className="text-muted-foreground">
                       Building trust, one project at a time, with unwavering commitment to quality and innovation.
