@@ -7,9 +7,9 @@ import heroImage from '@/assets/hero-skyline.jpg';
 
 const Home = () => {
   const stats = [
-    { icon: Building2, label: 'Projects Completed', value: '15+' },
-    { icon: Award, label: 'Years Experience', value: '15+' },
-    { icon: TrendingUp, label: 'Properties Sold', value: '200+' },
+    { icon: Building2, label: 'Projects Completed', value: '20+' },
+    { icon: Award, label: 'Years Experience', value: '10+' },
+    { icon: TrendingUp, label: 'Properties Sold', value: '300+' },
   ];
 
   return (
